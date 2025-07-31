@@ -1,0 +1,23 @@
+package com.shristi.java.basic;
+
+public class IfElseDemo {
+
+	public static void main(String[] args) {
+		int age = 17;
+		if(age > 18) {
+			System.out.println("Eligible to vote!");
+		}else {
+			System.out.println("Not eligible to vote!");
+		}
+		
+		int m1 = 95;
+		int m2 = 97;
+		int m3 = 94;
+		
+		int sum = m1 + m2 + m3;
+		System.out.println("Sum : " + sum);
+		
+		double average = (m1 + m2 + m3)/3;
+		System.out.println("Average : " + average);
+	}
+}

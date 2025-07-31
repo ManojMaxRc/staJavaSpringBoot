@@ -1,0 +1,42 @@
+package com.training.scan;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class ScanSum {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+
+		int[] arr = new int[6];
+
+		System.out.println("Enter the elements : ");
+
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = input.nextInt();
+		}
+		System.out.println(Arrays.toString(arr));
+		
+		System.out.println("Sum : " + sum(arr));
+		
+		System.out.println("Average : " + average(arr));
+	}
+
+	public static int sum(int[] arr) {
+
+		int sum = 0;
+
+		for (int i = 0; i < arr.length; i++) {
+			sum += arr[i];
+		}
+		return sum;
+	}
+	
+	public static double average(int[] arr) {
+		
+		double average = (double)sum(arr)/arr.length;
+		
+		return average;		
+	}
+}

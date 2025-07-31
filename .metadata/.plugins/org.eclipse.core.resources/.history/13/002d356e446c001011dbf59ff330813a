@@ -1,0 +1,32 @@
+package com.training.basic;
+
+import java.util.Scanner;
+
+public class ArmstrongNumber {
+
+	public static void main(String[] args) {
+				
+		Scanner input = new Scanner(System.in);
+        System.out.println("Enter the number : ");
+        int num = input.nextInt();
+        System.out.println(armstrongNumber(num));
+        
+        for (int i = 100; i < 1000; i++) {
+            if(armstrongNumber(i)){
+                System.out.println("Armstrong numbers : " + i);
+            }
+        }
+	}
+	
+	public static boolean armstrongNumber(int num) {
+		
+		int sum = 0;
+		int original = num;
+		while(num != 0) {
+			int remainder = num % 10;
+			sum += (remainder * remainder * remainder);
+			num = num /10;
+		}
+		return(original == sum);
+	}
+}

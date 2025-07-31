@@ -1,0 +1,14 @@
+package com.shristi.java;
+
+public class TernaryOperator {
+
+	public static void main(String[] args) {
+		int a = 20;
+		int b = 10;
+		
+		String result = (a > b) ? "a is greater" : "b is greater";
+		System.out.println(result);
+
+	}
+
+}

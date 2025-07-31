@@ -1,0 +1,35 @@
+package com.basics.quest5;
+
+public class MobileMain {
+
+	public static void main(String[] args) {
+		
+		Mobile mobile1 = new Mobile("Samsung", "Galaxy S25 Ultra", "Black");
+		
+		Mobile mobile2 = new Mobile("Apple", "Iphone 17 Pro", "Orange");
+		
+		Mobile mobile3 = new Mobile("Oneplus", "13", "Blue");
+		
+		Mobile mobile4 = new Mobile("Nothing", "Phone 2", "Red");
+		
+		Mobile mobile5 = new Mobile("Realme", "GT Pro", "White");
+		
+		Mobile[] mobiles = new Mobile[5];
+		mobiles[0] = mobile1;
+		mobiles[1] = mobile2;
+		mobiles[2] = mobile3;
+		mobiles[3] = mobile4;
+		mobiles[4] = mobile5;
+		
+		for (Mobile mobile : mobiles) {
+			mobile.getDetails();
+		}
+		
+		for (int i = 0; i < mobiles.length; i++) {
+			if(mobiles[i].brand.equals("Samsung")) {
+				mobiles[i].getDetails();
+			}
+		}
+	}
+
+}

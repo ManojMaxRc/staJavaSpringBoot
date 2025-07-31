@@ -1,0 +1,17 @@
+package com.training.basic;
+
+public class Odd {
+
+	public static void main(String[] args) {
+		int count = 0;
+		int num = 0;
+		
+		while (count <= 20) {
+			if(num % 2 != 0) {
+				System.out.println(num);
+				count++;
+			}
+			num++;			
+		}
+	}
+}

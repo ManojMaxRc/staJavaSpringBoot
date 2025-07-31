@@ -1,0 +1,26 @@
+package com.over.quest5;
+
+public class Greeter {
+
+	String name;
+	
+	public Greeter() {
+		
+	}
+
+	public Greeter(String name) {
+		this.name = name;
+	}
+	
+	void greetUser(String... messages) {
+		for (int i = 0; i < messages.length; i++) {
+			System.out.println("Messages : " + messages + name);
+		}
+	}
+	
+	void sayHello(String... names) {
+		for (int i = 0; i < names.length; i++) {
+			System.out.println("Welcome " + names);
+		}
+	}
+}

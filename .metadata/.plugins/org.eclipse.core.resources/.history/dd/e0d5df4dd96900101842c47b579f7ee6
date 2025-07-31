@@ -1,0 +1,22 @@
+package OopsExample;
+
+public class Employee {
+
+	String empName;
+	int empId;
+    double salary;
+    
+	public static void main(String[] args) {
+    Employee employee = new Employee();
+    employee.empName = "Manoj";
+    employee.empId = 1;
+    employee.salary = 30000;
+    
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [empName=" + empName + ", empId=" + empId + ", salary=" + salary + "]";
+	}
+
+}

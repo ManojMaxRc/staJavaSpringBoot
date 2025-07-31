@@ -1,0 +1,34 @@
+package com.training.basic;
+
+public class Prime {
+
+	public static void main(String[] args) {
+		
+		System.out.println(isPrimeNumbers(7));
+	}
+	
+//	public static void printPrimeNumbers(int number) {
+//		
+//		int count = 0;
+//
+//        System.out.println("Prime Numbers : ");
+//        while (count < number) {
+//            if (isPrimeNumbers(count)) {
+//                System.out.println(number + " ");
+//                count++;
+//            }
+//		 }
+//	}
+	public static boolean isPrimeNumbers(int num) {
+		
+		if (num == 0 || num == 1) {
+            return false;
+		}
+        
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0)
+                return false;
+        }
+        return true;
+	}
+}

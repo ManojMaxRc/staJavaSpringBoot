@@ -1,0 +1,21 @@
+package com.training.question3;
+
+public class Billing {
+
+	public static void main(String[] args) {
+		Product product = new Product();
+		
+		product.itemsAvailable("Laptop", "Smartphone", "Tablet");
+		System.out.println();
+		
+		product.showReviews("Laptop", "Good processor", "High battery capacity", "Fast charging");
+		System.out.println();
+
+		product.showReviews("Smartphone", "Good Camera", "High battery capacity", "Quick charge");
+		System.out.println();
+
+		product.showReviews("Tablet", "Bigger display", "Great Camera", "High performance");
+
+	}
+
+}

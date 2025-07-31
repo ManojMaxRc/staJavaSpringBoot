@@ -1,0 +1,39 @@
+package com.training.basic;
+
+import java.util.Scanner;
+
+public class Prime {
+
+	public static void main(String[] args) {
+		printPrimeNumbers(100);
+	}
+	
+	public static void printPrimeNumbers(int count) {
+		int number = 2;
+        int printed = 0;
+
+        System.out.println("First " + count + " Prime Numbers:");
+        while (printed < count) {
+            if (isPrimeNumbers(number)) {
+                System.out.println((printed + 1) + ": " + number);
+                printed++;
+            }
+            number++;
+		 }
+	}
+	public static boolean isPrimeNumbers(int num) {
+		
+		if (num <= 1)
+            return false;
+        if (num == 2)
+            return true;
+        if (num % 2 == 0)
+            return false;
+        
+        for (int i = 3; i <= num; i += 2) {
+            if (num % i == 0)
+                return false;
+        }
+        return true;
+	}
+}

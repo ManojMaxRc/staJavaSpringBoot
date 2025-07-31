@@ -1,0 +1,13 @@
+package com.training.question4;
+
+public class TicketBooking {
+
+	void bookingDetails(String busName, String destination, String source, String... passengerNames) {
+		
+		System.out.println("Bus name : " + busName + " Destination : " + destination 
+				+ " Source : " + source);
+		for (String passenger : passengerNames) {
+			System.out.println(" Passenge names : " + passenger);
+		}
+	}
+}

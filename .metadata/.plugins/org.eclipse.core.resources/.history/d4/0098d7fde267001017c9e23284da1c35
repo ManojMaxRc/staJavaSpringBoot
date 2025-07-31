@@ -1,0 +1,28 @@
+package com.shristi.arrays;
+
+public class OneDimArray {
+
+	public static void main(String[] args) {
+
+		int[] nums = new int[4];
+		System.out.println(nums.length);
+		System.out.println(nums[2]);
+		
+		nums[0] = 10;
+		nums[1] = 20;
+		nums[2] = 30;
+		nums[3] = 40;
+//		nums[4] = 50;   //ArrayIndexOutOfBoundException
+		System.out.println(nums[3]);
+		System.out.println("Iterate and print");
+		
+		//For loop
+		int sum = 0;
+		for (int i = 0; i < nums.length; i++) {
+			System.out.println(nums[i]);
+			System.out.println(sum += nums[i]);
+		}
+
+	}
+
+}

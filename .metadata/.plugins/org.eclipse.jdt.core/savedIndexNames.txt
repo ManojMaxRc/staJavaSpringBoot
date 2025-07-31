@@ -1,0 +1,9 @@
+INDEX VERSION 1.134+C:\Users\kaviy\ShristiFullStack\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+2205456778.index
+284067946.index
+4098709361.index
+1076739148.index
+1104649673.index
+4172376297.index
+3895556759.index

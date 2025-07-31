@@ -1,0 +1,26 @@
+package com.training.basic;
+
+public class ArmstrongNumber {
+
+	public static void main(String[] args) {
+		
+		armstrongNumber(153);
+		
+	}
+	
+	public static void armstrongNumber(int num) {
+		
+		int sum = 0;
+		int temp = num;
+		while(num != 0) {
+			int remainder = num % 10;
+			sum += (remainder * remainder * remainder);
+			num = num /10;
+		}
+		if(temp == sum){
+            System.out.println(sum + " : Is a armstrong number");
+        }else{
+            System.out.println(sum + " : Is not a armstrong number");
+        }
+	}
+}

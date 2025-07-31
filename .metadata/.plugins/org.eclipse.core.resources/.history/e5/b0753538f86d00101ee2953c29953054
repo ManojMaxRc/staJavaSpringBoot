@@ -1,0 +1,19 @@
+package com.over.quest2;
+
+public class Messenger {
+
+	void sendMail(String message) {
+		System.out.println("1 para constructor");
+		System.out.println("Message : " + message);
+	}
+	
+    void sendMail(String touserName,String message) {
+		System.out.println("2 para constructor");
+		System.out.println("Touser name : " + touserName + " Message : " + message);
+	}
+
+    void sendMail(String touserName,String message, String subject) {
+		System.out.println("3 para constructor");
+		System.out.println("Touser name : " + touserName + " Message : " + message + " Subject : " + subject);
+    }
+}

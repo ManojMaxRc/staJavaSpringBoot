@@ -1,0 +1,46 @@
+package com.training.scan;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class TwoDim {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in);
+
+		String[][] twoDimstr = new String[3][3];
+
+		System.out.println("Enter the elements : ");
+		
+		int sCount = 0;
+
+		for (int i = 0; i < twoDimstr.length; i++) {
+			for (int j = 0; j < twoDimstr[i].length; j++) {
+				twoDimstr[i][j] = input.next();
+			}
+		}
+		
+		for (String[] strings : twoDimstr) {
+			for (String string : strings) {
+				if (string != null && string.toLowerCase().startsWith("s")) {
+					sCount++;
+				}
+			}
+		}
+		
+		int index = 0;
+		
+		String[] oneDimStr = new String[sCount];
+		
+		for (String[] strings : twoDimstr) {
+			for (String string : strings) {
+				if (string != null && string.toLowerCase().startsWith("s")) {
+						oneDimStr[index] = string;
+						index++;
+				}
+			}
+		}
+		System.out.println(Arrays.toString(oneDimStr));
+	}
+}

@@ -1,0 +1,37 @@
+package com.training.basic;
+
+import java.util.Scanner;
+
+public class Factorial {
+
+	public static void main(String[] args) {
+
+		System.out.println("Factorial of the number : " + calculateFactorial());
+	}
+
+	public static long calculateFactorial() {
+
+		Scanner input = new Scanner(System.in);
+
+		System.out.println("Please enter the number : ");
+		long num = input.nextInt();
+
+		long factorial = 1;
+
+		if (num < 0) {
+			input.close();
+			return -1;
+		}
+
+		if (num == 0 || num == 1) {
+			input.close();
+			return 1;
+		}
+
+		for (int i = 2; i <= num; i++) {
+			factorial *= i;
+		}
+		input.close();
+		return factorial;
+	}
+}

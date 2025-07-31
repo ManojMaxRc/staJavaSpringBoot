@@ -1,0 +1,23 @@
+package com.training.basic;
+
+import java.util.stream.IntStream;
+
+public class Even {
+
+	public static void main(String[] args) {
+
+		printEvenNumbers(5);
+	}
+
+	public static void printEvenNumbers(int num) {
+
+		// Using for loop
+		for (int i = 1; i <= num; i++) {
+			System.out.println(i * 2);
+		}
+		System.out.println("*****************************");
+
+		// Using lambda expression
+		IntStream.iterate(2, n -> n + 2).limit(5).forEach(System.out::println);
+	}
+}

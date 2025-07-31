@@ -1,0 +1,21 @@
+package com.training.question1;
+
+public class MobMain {
+
+	public static void main(String[] args) {
+
+		Mobile mobile1 = new Mobile("Iphone 17", 90000, "Apple");
+
+		Mobile mobile2 = new Mobile("Galaxy S25 Ultra", 100000, "Samsung");
+
+		mobile1.getDetails();
+		mobile1.showFeatures();
+
+		System.out.println();
+		
+		mobile2.getDetails();
+		mobile2.showFeatures();
+
+	}
+
+}

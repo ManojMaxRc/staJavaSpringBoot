@@ -1,0 +1,18 @@
+package com.basics.quest4;
+
+public class Training {
+
+	String[] showCourse() {
+		
+		String[] courses = {"Java", "Python", "React", "SprinBoot"};
+		
+		for (String course : courses) {
+			System.out.println(course);
+		}
+		return courses;
+	}
+
+	void showTrainers(String... names) {
+		System.out.println("Trainer names : " + names);
+	}
+}

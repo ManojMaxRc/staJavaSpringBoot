@@ -1,0 +1,19 @@
+package com.shristi.java.basics;
+
+import jdk.internal.org.jline.terminal.TerminalBuilder.SystemOutput;
+
+public class Demo {
+
+	public static void main(String[] args) {
+		System.out.print("Hello World");
+		System.out.println(" Java");
+		System.out.print("Good Bye");
+		
+
+		System.out.print("Hello World \t");
+		System.out.println(" Java");
+		System.out.print("Good Bye \n");
+		System.out.println("Hi");
+	}
+
+}

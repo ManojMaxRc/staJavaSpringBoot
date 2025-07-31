@@ -1,0 +1,45 @@
+package com.training.basic;
+
+import java.util.Arrays;
+
+public class ReverseArray {
+
+	public static void main(String[] args) {
+		
+		int[] arr = {4, 9, 114, 219, 30, 46, 59, 1, -19};
+		reverseArrayElements(arr);
+		reverseArray(arr);
+	}
+	
+	public static void reverseArrayElements(int[] arr){
+		
+		if(arr.length == 0 || arr == null) {
+			System.out.println("Array is empty");
+		}
+		
+		for (int i = arr.length - 1; i >= 0; i--) {
+			System.out.println(arr[i]);
+		}
+	}
+	
+	public static void reverseArray(int[] arr){
+		
+		if(arr.length == 0 || arr == null) {
+			System.out.println("Array is empty");
+		}
+		
+		int start = 0;
+		int end = arr.length - 1;
+		
+		while(start < end) {
+			int temp = arr[start];
+			arr[start] = arr[end];
+			arr[end] = temp;
+			
+			start++;
+			end--;
+		}
+		
+		System.out.println(Arrays.toString(arr));
+	}
+}

@@ -1,0 +1,31 @@
+package com.training.basic;
+
+public class SmallSecond {
+
+	public static void main(String[] args) {
+		int[] arr = { 4, 9, 114, 219, 30, 46, 59, 1, -19, -10};
+
+		int smallest = Integer.MAX_VALUE;
+		int secondSmallest = Integer.MAX_VALUE;
+
+		if (arr.length < 2) {
+			System.out.println("Array must have atleast 3 elements");
+		}
+
+		for (int num : arr) {
+			if(num < smallest) {
+				secondSmallest = smallest;
+				smallest = num;
+			}else if (num < secondSmallest && num > smallest) {
+				secondSmallest = num;
+			}
+		}
+		
+		if(secondSmallest == Integer.MAX_VALUE) {
+			System.out.println("Second smallest number not found");
+		}else {
+			System.out.println("Second smallest number : " + secondSmallest);
+		}
+
+	}
+}
