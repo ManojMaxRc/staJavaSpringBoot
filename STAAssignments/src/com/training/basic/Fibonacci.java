@@ -5,7 +5,7 @@ import java.math.BigInteger;
 public class Fibonacci {
 
 	public static void main(String[] args) {
-		printFibonacciNumber(100);
+		printFibonacciNumber(10);
 	}
 	
 	public static void printFibonacciNumber(int num) {
@@ -23,5 +23,4 @@ public class Fibonacci {
 		    second = next;
 		}
 	}
-
 }

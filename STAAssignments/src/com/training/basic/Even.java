@@ -18,6 +18,8 @@ public class Even {
 		System.out.println("*****************************");
 
 		// Using lambda expression
-		IntStream.iterate(2, n -> n + 2).limit(5).forEach(System.out::println);
+		IntStream.iterate(2, n -> n + 2)
+		.limit(5)
+		.forEach(System.out::println);
 	}
 }
