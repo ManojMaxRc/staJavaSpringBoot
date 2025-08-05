@@ -1,0 +1,17 @@
+package com.shristi.java.OopsExample.constructorExample;
+
+public class Student {
+	
+	String studentName;
+	String department;
+	
+	void getDetails() {
+		System.out.println("Student name : " + studentName);
+		System.out.println("Department : " + department);
+	}
+	
+    Student(String name, String department){
+    	studentName = name;
+    	this.department = department;    //this.globalVariable(or)instanceVariable = localVariable
+    }
+}

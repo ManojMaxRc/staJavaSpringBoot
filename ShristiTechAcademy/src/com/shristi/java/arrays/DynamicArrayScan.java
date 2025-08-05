@@ -1,0 +1,42 @@
+package com.shristi.java.arrays;
+
+import java.util.Scanner;
+
+public class DynamicArrayScan {
+
+	public static void main(String[] args) {
+		int[][] marks = new int[3][];
+		System.out.println(marks.length);
+		
+//		marks[0][0] = 10;
+//		marks[0][1] = 20;
+//		
+//		marks[1][0] = 30;
+//		marks[1][1] = 40;
+//
+//		marks[2][0] = 50;
+//		marks[2][1] = 60;
+		marks[0] = new int[3];
+		marks[1] = new int[4];
+		marks[2] = new int[2];
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter the marks : ");
+		
+		for (int i = 0; i < marks.length; i++) {
+			System.out.println("Enter the row values : " + i);
+			for (int j = 0; j < marks[i].length; j++) {
+				System.out.println("Enter the column values : " + j);
+				marks[i][j] = input.nextInt();
+			}
+		}
+		
+		for (int[] one : marks) {
+	        for (int mark : one) {
+				System.out.print(mark + " ");
+			}
+		}
+		input.close();
+	}
+
+}
