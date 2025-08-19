@@ -13,11 +13,7 @@ public class Duplicates {
 		}
 		
 		for (int i = 0; i < arr.length; i++) {
-			while (en.hasMoreElements()) {
-				type type = (type) en.nextElement();
-				
+			
 			}
 		}
 	}
-
-}

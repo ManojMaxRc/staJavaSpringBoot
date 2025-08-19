@@ -8,7 +8,7 @@ public class CustomerMain {
 		
 		GroupOne groupOne = new GroupOne("Manoj", 10, "TL1");
 		groupOne.projectAssigned();
-		System.out.println(Arrays.toString(groupOne.showTools()));
+		groupOne.showTools();
 		
 		GroupTwo groupTwo = new GroupTwo("Jagan", 5, "TL2");
 		groupTwo.projectAssigned();

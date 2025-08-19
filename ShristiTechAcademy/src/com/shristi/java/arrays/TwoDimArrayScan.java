@@ -33,5 +33,4 @@ public class TwoDimArrayScan {
 		}
 		input.close();
 	}
-
 }

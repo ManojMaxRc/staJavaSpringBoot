@@ -31,7 +31,7 @@ public class Showroom {
 //		Bike bike = (Bike)vehicle1;
 //		bike.showFeatures();
 		
-//		Bike bike = (Bike)vehicle;   //ClassCastException, since bike is pointing to car obj
-//		bike.showFeatures();
+//		Car car1 = (Car)vehicle;   //ClassCastException, since car is pointing to bike obj
+//		car1.showFeatures();
 	}
 }

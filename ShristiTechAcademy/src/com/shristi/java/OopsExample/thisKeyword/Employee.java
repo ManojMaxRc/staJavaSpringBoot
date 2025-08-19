@@ -14,6 +14,5 @@ public class Employee {
     
     String greet(String message) {
     	return "Welcome " + message;
-    }
-   
+    } 
 }

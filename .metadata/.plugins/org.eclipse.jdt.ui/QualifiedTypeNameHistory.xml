@@ -33,4 +33,16 @@
     <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+    <fullyQualifiedTypeName name="com.javaguides.learn_spring_framework.AppConfig"/>
+    <fullyQualifiedTypeName name="com.javaguides.learn_spring_framework.Bike"/>
+    <fullyQualifiedTypeName name="com.javaguides.learn_spring_framework.Vehicle"/>
+    <fullyQualifiedTypeName name="com.javaguides.learn_spring_framework.Car"/>
+    <fullyQualifiedTypeName name="com.javaguides.learn_spring_framework.Cycle"/>
+    <fullyQualifiedTypeName name="com.javaguides.learn_spring_framework.Traveller"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
 </qualifiedTypeNameHistroy>

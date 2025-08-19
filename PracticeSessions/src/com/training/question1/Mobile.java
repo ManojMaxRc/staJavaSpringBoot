@@ -1,7 +1,5 @@
 package com.training.question1;
 
-import java.lang.classfile.instruction.ReturnInstruction;
-
 public class Mobile {
 
 	String model;

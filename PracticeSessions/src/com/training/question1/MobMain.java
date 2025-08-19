@@ -10,12 +10,12 @@ public class MobMain {
 
 		Mobile mobile2 = new Mobile("Galaxy S25 Ultra", 100000, "Samsung");
 
-		System.out.print("Mobile 1 Details : ");
+		System.out.println("Mobile 1 Details : ");
 		mobile1.getDetails();
 
 		System.out.println();
 		
-		System.out.print("Mobile 2 Details : ");
+		System.out.println("Mobile 2 Details : ");
 		mobile2.getDetails();
 		
 		System.out.println();

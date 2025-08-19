@@ -25,6 +25,4 @@ public class Book {
 	void printDetails() {
 		System.out.println("Title : " + title + " Author : " + author + " Price : " + price);
 	}
-	
-	
 }

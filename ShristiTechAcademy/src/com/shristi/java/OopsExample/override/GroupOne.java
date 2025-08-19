@@ -1,5 +1,7 @@
 package com.shristi.java.OopsExample.override;
 
+import java.util.Arrays;
+
 public class GroupOne extends Project{
 
 	public GroupOne(String clientName, int duration, String tlName) {
@@ -15,6 +17,7 @@ public class GroupOne extends Project{
 	
 	String[] showTools() {
 		String[] tools = {"Java", "Springboot", "SQL"};
+		System.out.println(Arrays.toString(tools));
 		return tools;
 	}
 }
