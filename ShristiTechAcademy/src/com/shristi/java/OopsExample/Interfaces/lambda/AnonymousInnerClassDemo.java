@@ -1,6 +1,6 @@
 package com.shristi.java.OopsExample.Interfaces.lambda;
 
-public class AnonymousInnerClassDemo implements Greet{
+public class AnonymousInnerClassDemo{
 
 	public static void main(String[] args) {
 		

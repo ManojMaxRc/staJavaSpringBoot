@@ -13,7 +13,7 @@ public class Developer extends TeamLead {
 
 	@Override
 	void showProjects() {
-		System.out.println("Developer class calculate bonus method");
+		System.out.println("Developer class show project method");
 	}
 	
 	void showHobbies() {
